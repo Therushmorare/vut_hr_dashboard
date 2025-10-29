@@ -1,7 +1,7 @@
-import AdminDashboard from "./components/Dashboard/DashboardPage";
+import ReportsPage from "./components/Reports/Reports";
 
 export default function Home() {
   return (
-    <AdminDashboard />
+    <ReportsPage />
   );
 }

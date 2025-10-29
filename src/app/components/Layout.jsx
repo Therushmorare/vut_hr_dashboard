@@ -1,6 +1,7 @@
 // src/components/Layout.js
 import Sidebar from './Sidebar';
 import Navbar from './Navbar';
+import CandidatesPage from './Candidates/CandidatesPage';
 
 export default function Layout({ children }) {
   return (

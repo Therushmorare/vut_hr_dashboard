@@ -3,7 +3,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Search, Bell, User, Settings, Shield, HelpCircle, Activity, LogOut} from 'lucide-react';
 import SettingsPanel from '../features/Settings';
-//import DocumentsModal from '../features/Documents';
+import DocumentsModal from '../features/Documents';
 import NotificationsModal from '../features/Notifications/NotificationsModal';
 
 const Navbar = () => {
@@ -87,7 +87,7 @@ const Navbar = () => {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="w-full pl-10 pr-4 py-2.5 border border-gray-300 rounded-lg text-sm outline-none transition-all duration-200 focus:border-green-700 focus:ring-4 focus:ring-green-100 placeholder-gray-400"
-            style={{ borderColor: searchQuery ? '#281e7cff' : '' }}
+            style={{ borderColor: searchQuery ? '#0D5E3A' : '' }}
           />
         </div>
       </div>
@@ -97,28 +97,29 @@ const Navbar = () => {
         {/* Documents */}
         <button 
           onClick={() => setShowDocumentsModal(true)}
-          className="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50 hover:text-blue-700 transition-all duration-200"
+          className="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50 hover:text-green-700 transition-all duration-200"
         >
           <span>Documents</span>
         </button>
 
-        {/* Payroll */}
+        {/* Payroll 
         <button 
           onClick={() => console.log('Payroll clicked')}
-          className="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50 hover:text-blue-700 transition-all duration-200"
+          className="flex items-center space-x-2 px-4 py-2 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-50 hover:text-green-700 transition-all duration-200"
         >
           <span>Payroll</span>
         </button>
+        */}
 
         {/* Notifications */}
         <div className="relative">
           <button 
             onClick={() => setShowNotificationsModal(!showNotificationsModal)}
-            className="relative p-2.5 rounded-lg text-gray-700 hover:bg-gray-50 hover:text-blue-700 transition-all duration-200"
+            className="relative p-2.5 rounded-lg text-gray-700 hover:bg-gray-50 hover:text-green-700 transition-all duration-200"
           >
             <Bell size={20} />
             <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs font-semibold rounded-full w-5 h-5 flex items-center justify-center">
-              2
+              3
             </span>
           </button>
         </div>
@@ -127,7 +128,7 @@ const Navbar = () => {
         <div className="relative" ref={dropdownRef}>
           <button 
             onClick={() => setShowProfileDropdown(!showProfileDropdown)}
-            className="flex items-center space-x-3 px-3 py-2 border border-gray-200 rounded-lg hover:bg-gray-50 hover:border-blue-700 transition-all duration-200"
+            className="flex items-center space-x-3 px-3 py-2 border border-gray-200 rounded-lg hover:bg-gray-50 hover:border-green-700 transition-all duration-200"
           >
               <AvatarComponent size="sm" />
               <span className="text-sm font-medium text-gray-700">Profile</span>
@@ -161,9 +162,9 @@ const Navbar = () => {
                       className="w-full px-4 py-3 text-left hover:bg-gray-50 transition-colors duration-150 group"
                     >
                       <div className="flex items-start space-x-3">
-                        <IconComponent size={16} className="text-gray-500 group-hover:text-blue-700 mt-0.5 flex-shrink-0" />
+                        <IconComponent size={16} className="text-gray-500 group-hover:text-green-700 mt-0.5 flex-shrink-0" />
                         <div>
-                          <p className="text-sm font-medium text-gray-900 group-hover:text-blue-700">
+                          <p className="text-sm font-medium text-gray-900 group-hover:text-green-700">
                             {item.label}
                           </p>
                           <p className="text-xs text-gray-500 mt-0.5">
@@ -178,21 +179,20 @@ const Navbar = () => {
 
               {/* Logout Section */}
               <div className="border-t border-gray-100 pt-2">
-                <button
-                  onClick={() => {
+                <a
+                  href="https://recruitvut.netlify.app/"
+                  onClick={(e) => {
                     console.log('Logout clicked');
                     setShowProfileDropdown(false);
-                  }}
-                  className="w-full px-4 py-3 text-left hover:bg-red-50 transition-colors duration-150 group"
-                >
-                  <div className="flex items-center space-x-3">
+                    }}
+                    className="w-full px-4 py-3 flex items-center space-x-3 hover:bg-red-50 transition-colors duration-150 group"
+                  >
                     <LogOut size={16} className="text-gray-500 group-hover:text-red-600" />
                     <span className="text-sm font-medium text-gray-900 group-hover:text-red-600">
                       Logout
                     </span>
-                  </div>
-                </button>
-              </div>
+                  </a>
+                </div>
             </div>
           )}
         </div>
