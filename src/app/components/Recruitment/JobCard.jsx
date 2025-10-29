@@ -43,7 +43,7 @@ const JobCard = ({ job, onViewDetails, onApprove, onReject }) => {
         <div className="mb-4">
           <div className="flex flex-wrap gap-1">
             {job.requiredSkills.slice(0, 4).map((skill, idx) => (
-              <span key={idx} className="bg-green-100 text-green-800 px-2 py-0.5 rounded text-xs">
+              <span key={idx} className="bg-green-100 text-blue-800 px-2 py-0.5 rounded text-xs">
                 {skill}
               </span>
             ))}
@@ -80,7 +80,7 @@ const JobCard = ({ job, onViewDetails, onApprove, onReject }) => {
           </button>
           <button
             onClick={() => onApprove(job.id)}
-            className="px-4 py-2 text-sm bg-green-700 text-white rounded-lg hover:bg-green-800 transition-colors flex items-center"
+            className="px-4 py-2 text-sm bg-blue-700 text-white rounded-lg hover:bg-blue-800 transition-colors flex items-center"
           >
             <CheckCircle size={14} className="mr-1" />
             Approve

@@ -166,7 +166,7 @@ const EditUserModal = ({ show, onClose, onSave, user, activeTab, roleLabel }) =>
           </button>
           <button
             onClick={handleSubmit}
-            className="flex-1 px-4 py-2 bg-green-700 text-white rounded-lg hover:bg-green-800"
+            className="flex-1 px-4 py-2 bg-blue-700 text-white rounded-lg hover:bg-blue-800"
           >
             Save Changes
           </button>

@@ -38,8 +38,8 @@ const Sidebar = () => {
                   onClick={() => handleItemClick( item.href)}
                   className={`w-full flex items-center justify-between p-2 rounded-md transition-all duration-200 border-none cursor-pointer text-black text-sm ${
                     isActive 
-                      ? 'bg-green-100 text-green-700 font-medium' 
-                      : 'hover:bg-green-100 hover:text-green-700'
+                      ? 'bg-blue-100 text-blue-700 font-medium' 
+                      : 'hover:bg-blue-100 hover:text-green-700'
                   }`}
                 >
                   <div className="flex items-center gap-1">

@@ -82,7 +82,7 @@ const UserTableRow = ({
       )}
       <td className="py-3 px-4">
         <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${
-          user.status === 'active' ? 'bg-green-100 text-green-800' : 'bg-gray-100 text-gray-800'
+          user.status === 'active' ? 'bg-blue-100 text-blue-800' : 'bg-gray-100 text-gray-800'
         }`}>
           {user.status === 'active' ? 'Active' : 'Inactive'}
         </span>

@@ -205,13 +205,13 @@ const NotificationsModal = ({ onClose }) => {
                     className={`relative p-4 rounded-lg border transition-all duration-200 hover:shadow-md ${
                       notification.isRead 
                         ? 'bg-white border-gray-200' 
-                        : 'bg-green-50 border-green-200'
+                        : 'bg-blue-50 border-blue-200'
                     }`}
                   >
                     {/* Unread Indicator */}
                     {!notification.isRead && (
                       <div className="absolute top-4 right-4">
-                        <div className="w-2 h-2 bg-green-600 rounded-full"></div>
+                        <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
                       </div>
                     )}
 
@@ -241,7 +241,7 @@ const NotificationsModal = ({ onClose }) => {
                             {!notification.isRead && (
                               <button
                                 onClick={() => markAsRead(notification.id)}
-                                className="p-1.5 hover:bg-green-100 rounded transition-colors duration-200 group"
+                                className="p-1.5 hover:bg-blue-100 rounded transition-colors duration-200 group"
                                 title="Mark as read"
                               >
                                 <Check size={14} className="text-gray-500 group-hover:text-green-700" />

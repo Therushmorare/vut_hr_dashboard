@@ -34,7 +34,7 @@ const FilterSearch = ({ selectedFilter, setSelectedFilter, searchQuery, setSearc
             placeholder="Search by title, department, or submitter..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="pl-9 pr-4 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-green-700 focus:ring-2 focus:ring-green-100 w-full md:w-80"
+            className="pl-9 pr-4 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-blue-700 focus:ring-2 focus:ring-blue-100 w-full md:w-80"
           />
         </div>
       </div>

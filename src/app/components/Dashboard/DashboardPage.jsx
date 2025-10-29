@@ -136,7 +136,7 @@ const AdminDashboard = () => {
               <select
                 value={timeRange}
                 onChange={(e) => setTimeRange(e.target.value)}
-                className="px-4 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-green-700 focus:ring-2 focus:ring-green-100"
+                className="px-4 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-blue-700 focus:ring-2 focus:ring-blue-100"
               >
                 <option value="today">Today</option>
                 <option value="week">This Week</option>
@@ -156,7 +156,7 @@ const AdminDashboard = () => {
               <div className="p-3 bg-blue-100 rounded-lg">
                 <Users size={24} className="text-blue-600" />
               </div>
-              <span className="flex items-center text-sm font-medium text-green-600">
+              <span className="flex items-center text-sm font-medium text-blue-600">
                 <TrendingUp size={16} className="mr-1" />
                 +12%
               </span>
@@ -169,9 +169,9 @@ const AdminDashboard = () => {
           <div className="bg-white rounded-lg shadow-sm p-6">
             <div className="flex items-center justify-between mb-4">
               <div className="p-3 bg-green-100 rounded-lg">
-                <Briefcase size={24} className="text-green-600" />
+                <Briefcase size={24} className="text-blue-600" />
               </div>
-              <span className="flex items-center text-sm font-medium text-green-600">
+              <span className="flex items-center text-sm font-medium text-blue-600">
                 <TrendingUp size={16} className="mr-1" />
                 +8%
               </span>
@@ -186,7 +186,7 @@ const AdminDashboard = () => {
               <div className="p-3 bg-purple-100 rounded-lg">
                 <FileText size={24} className="text-purple-600" />
               </div>
-              <span className="flex items-center text-sm font-medium text-green-600">
+              <span className="flex items-center text-sm font-medium text-blue-600">
                 <TrendingUp size={16} className="mr-1" />
                 +24%
               </span>
@@ -290,7 +290,7 @@ const AdminDashboard = () => {
               {topJobs.map((job, index) => (
                 <div key={job.id} className="flex items-center justify-between p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
                   <div className="flex items-center space-x-4 flex-1">
-                    <div className="flex items-center justify-center w-8 h-8 bg-green-100 text-green-700 rounded-full font-semibold text-sm">
+                    <div className="flex items-center justify-center w-8 h-8 bg-blue-100 text-blue-700 rounded-full font-semibold text-sm">
                       {index + 1}
                     </div>
                     <div className="flex-1">
@@ -307,7 +307,7 @@ const AdminDashboard = () => {
                       </div>
                     </div>
                   </div>
-                  <span className="px-2.5 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                  <span className="px-2.5 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
                     Active
                   </span>
                 </div>
@@ -378,7 +378,7 @@ const AdminDashboard = () => {
                       </div>
                     </div>
                   </div>
-                  <ArrowUpRight size={16} className="text-green-600" />
+                  <ArrowUpRight size={16} className="text-blue-600" />
                 </div>
               ))}
             </div>

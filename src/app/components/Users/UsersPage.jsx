@@ -259,7 +259,7 @@ const UsersPage = () => {
             </div>
             <button
               onClick={() => setShowAddUser(true)}
-              className="flex items-center space-x-2 px-4 py-2 bg-green-700 text-white rounded-lg hover:bg-green-800 transition-colors"
+              className="flex items-center space-x-2 px-4 py-2 bg-blue-700 text-white rounded-lg hover:bg-blue-800 transition-colors"
             >
               <Plus size={16} />
               <span>Add {getRoleLabel()}</span>
@@ -286,7 +286,7 @@ const UsersPage = () => {
         {/* Users Table */}
         {loading ? (
           <div className="bg-white rounded-lg shadow-sm p-12 text-center">
-            <div className="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-green-700"></div>
+            <div className="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-blue-700"></div>
             <p className="mt-4 text-gray-600">Loading users...</p>
           </div>
         ) : (

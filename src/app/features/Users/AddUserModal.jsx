@@ -180,7 +180,7 @@ const AddUserModal = ({ show, onClose, onAdd, activeTab, roleLabel }) => {
           <button
             onClick={handleSubmit}
             disabled={!isFormValid()}
-            className="flex-1 px-4 py-2 bg-green-700 text-white rounded-lg hover:bg-green-800 disabled:bg-gray-300 disabled:cursor-not-allowed"
+            className="flex-1 px-4 py-2 bg-blue-700 text-white rounded-lg hover:bg-blue-800 disabled:bg-gray-300 disabled:cursor-not-allowed"
           >
             Add {roleLabel}
           </button>
