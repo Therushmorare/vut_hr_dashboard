@@ -14,8 +14,8 @@ const CandidateTable = ({
       return <ChevronUp className="w-4 h-4 text-gray-400" />;
     }
     return sortConfig.direction === 'asc' ? 
-      <ChevronUp className="w-4 h-4 text-green-600" /> : 
-      <ChevronDown className="w-4 h-4 text-green-600" />;
+      <ChevronUp className="w-4 h-4 text-blue-600" /> : 
+      <ChevronDown className="w-4 h-4 text-blue-600" />;
   };
 
   return (

@@ -19,7 +19,7 @@ const SearchAndFilters = ({ searchQuery, filters, onSearchChange, onFilterChange
         </div>
         <button
           onClick={onSearch}
-          className="px-6 py-3 bg-green-700 text-white rounded-lg hover:bg-green-800 transition-colors duration-200 font-medium"
+          className="px-6 py-3 bg-blue-700 text-white rounded-lg hover:bg-blue-800 transition-colors duration-200 font-medium"
         >
           Search
         </button>

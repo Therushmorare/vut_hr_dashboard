@@ -66,7 +66,7 @@ const InterviewRow = React.memo(({
       <div className="flex items-center space-x-2">
         <button
           onClick={() => onView(interview)}
-          className="p-1.5 text-gray-600 hover:text-green-700 hover:bg-green-50 rounded-md transition-colors"
+          className="p-1.5 text-gray-600 hover:text-blue-700 hover:bg-blue-50 rounded-md transition-colors"
           title="View details"
         >
           <Eye size={16} />

@@ -12,12 +12,12 @@ const JobPostsFilter = ({ searchQuery, setSearchQuery, onSearch }) => {
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
           onKeyPress={(e) => e.key === 'Enter' && onSearch()}
-          className="pl-10 pr-4 py-3 w-80 border border-gray-300 rounded-lg text-sm outline-none focus:border-green-700 focus:ring-4 focus:ring-green-100"
+          className="pl-10 pr-4 py-3 w-80 border border-gray-300 rounded-lg text-sm outline-none focus:border-blue-700 focus:ring-4 focus:ring-blue-100"
         />
       </div>
       <button
         onClick={onSearch}
-        className="px-6 py-3 bg-green-700 text-white rounded-lg hover:bg-green-800 transition-colors duration-200 font-medium"
+        className="px-6 py-3 bg-blue-700 text-white rounded-lg hover:bg-blue-800 transition-colors duration-200 font-medium"
       >
         Search
       </button>

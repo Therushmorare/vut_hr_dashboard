@@ -170,7 +170,7 @@ const ApplicationsTable = ({
           <p className="text-gray-500 mb-4">No applications found matching your criteria</p>
           <button
             onClick={onClearFilters}
-            className="text-green-600 hover:text-green-800"
+            className="text-green-600 hover:text-blue-800"
           >
             Clear filters to see all applications
           </button>

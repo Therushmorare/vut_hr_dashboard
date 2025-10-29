@@ -122,14 +122,14 @@ const RecruitmentDashboard = () => {
             <select
               value={timeFilter}
               onChange={(e) => setTimeFilter(e.target.value)}
-              className="px-4 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-green-700 focus:ring-2 focus:ring-green-100"
+              className="px-4 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-blue-700 focus:ring-2 focus:ring-blue-100"
             >
               <option value="week">This Week</option>
               <option value="month">This Month</option>
               <option value="quarter">This Quarter</option>
               <option value="year">This Year</option>
             </select>
-            <button className="flex items-center space-x-2 px-4 py-2 bg-green-700 text-white rounded-lg hover:bg-green-800 transition-colors">
+            <button className="flex items-center space-x-2 px-4 py-2 bg-blue-700 text-white rounded-lg hover:bg-blue-800 transition-colors">
               <Calendar size={16} />
               <span>Export Report</span>
             </button>
@@ -218,7 +218,7 @@ const RecruitmentDashboard = () => {
                   </div>
                   <div className="w-full bg-gray-200 rounded-full h-3">
                     <div
-                      className="bg-gradient-to-r from-green-500 to-green-700 h-3 rounded-full transition-all duration-500"
+                      className="bg-gradient-to-r from-blue-500 to-blue-700 h-3 rounded-full transition-all duration-500"
                       style={{ width: `${stage.percentage}%` }}
                     />
                   </div>

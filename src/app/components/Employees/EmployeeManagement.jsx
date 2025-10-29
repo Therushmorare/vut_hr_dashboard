@@ -157,7 +157,7 @@ const EmployeeManagement = ({ isOpen, onClose, formData }) => {
                     onClick={() => setActiveTab(tab.id)}
                     className={`flex items-center space-x-2 px-4 py-3 text-sm font-medium border-b-2 transition-colors relative ${
                       activeTab === tab.id
-                        ? 'border-green-700 text-green-700'
+                        ? 'border-blue-700 text-blue-700'
                         : 'border-transparent text-gray-500 hover:text-gray-700'
                     }`}
                   >
@@ -179,7 +179,7 @@ const EmployeeManagement = ({ isOpen, onClose, formData }) => {
                   <h4 className="font-medium text-gray-900">Personal Information</h4>
                   <button
                     onClick={isEditing ? handleSave : () => setIsEditing(true)}
-                    className="flex items-center space-x-1 px-3 py-1 text-sm bg-green-700 text-white rounded hover:bg-green-800 transition-colors"
+                    className="flex items-center space-x-1 px-3 py-1 text-sm bg-blue-700 text-white rounded hover:bg-green-800 transition-colors"
                   >
                     <Edit2 size={14} />
                     <span>{isEditing ? 'Save' : 'Edit'}</span>
@@ -201,7 +201,7 @@ const EmployeeManagement = ({ isOpen, onClose, formData }) => {
                   <h4 className="font-medium text-gray-900">Job Information</h4>
                   <button
                     onClick={isEditing ? handleSave : () => setIsEditing(true)}
-                    className="flex items-center space-x-1 px-3 py-1 text-sm bg-green-700 text-white rounded hover:bg-green-800 transition-colors"
+                    className="flex items-center space-x-1 px-3 py-1 text-sm bg-blue-700 text-white rounded hover:bg-blue-800 transition-colors"
                   >
                     <Edit2 size={14} />
                     <span>{isEditing ? 'Save' : 'Edit'}</span>
@@ -223,7 +223,7 @@ const EmployeeManagement = ({ isOpen, onClose, formData }) => {
                   <h4 className="font-medium text-gray-900">Payroll Information</h4>
                   <button
                     onClick={isEditing ? handleSave : () => setIsEditing(true)}
-                    className="flex items-center space-x-1 px-3 py-1 text-sm bg-green-700 text-white rounded hover:bg-green-800 transition-colors"
+                    className="flex items-center space-x-1 px-3 py-1 text-sm bg-blue-700 text-white rounded hover:bg-blue-800 transition-colors"
                   >
                     <Edit2 size={14} />
                     <span>{isEditing ? 'Save' : 'Edit'}</span>

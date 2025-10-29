@@ -10,7 +10,7 @@ export const ApproveModal = ({ show, onConfirm, onCancel }) => {
     <div className="fixed inset-0 backdrop-blur-sm bg-white bg-opacity-30 z-[60] flex items-center justify-center p-4">
       <div className="bg-white rounded-lg max-w-md w-full p-6">
         <div className="flex items-center justify-center w-12 h-12 rounded-full bg-green-100 mx-auto mb-4">
-          <CheckCircle size={24} className="text-green-600" />
+          <CheckCircle size={24} className="text-blue-600" />
         </div>
         <h3 className="text-xl font-semibold text-gray-900 text-center mb-2">Approve Job Post?</h3>
         <p className="text-gray-600 text-center mb-6">
@@ -25,7 +25,7 @@ export const ApproveModal = ({ show, onConfirm, onCancel }) => {
           </button>
           <button
             onClick={onConfirm}
-            className="flex-1 px-4 py-2 bg-green-700 text-white rounded-lg hover:bg-green-800"
+            className="flex-1 px-4 py-2 bg-blue-700 text-white rounded-lg hover:bg-blue-800"
           >
             Approve
           </button>

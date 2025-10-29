@@ -20,12 +20,12 @@ const JobPostHeader = ({ searchQuery, setSearchQuery, handleSearch, setModalType
               placeholder="Search jobs..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="pl-10 pr-4 py-3 w-80 border border-gray-300 rounded-lg text-sm outline-none focus:border-green-700 focus:ring-4 focus:ring-green-100"
+              className="pl-10 pr-4 py-3 w-80 border border-gray-300 rounded-lg text-sm outline-none focus:border-blue-700 focus:ring-4 focus:ring-blue-100"
             />
           </div>
           <button
             onClick={handleSearch}
-            className="px-6 py-3 bg-green-700 text-white rounded-lg hover:bg-green-800 transition-colors duration-200 font-medium"
+            className="px-6 py-3 bg-blue-700 text-white rounded-lg hover:bg-blue-800 transition-colors duration-200 font-medium"
           >
             Search
           </button>
@@ -38,7 +38,7 @@ const JobPostHeader = ({ searchQuery, setSearchQuery, handleSearch, setModalType
             setModalType('createJob');
             setShowModal(true);
           }}
-          className="flex items-center space-x-2 px-4 py-2 bg-green-700 text-white rounded-lg hover:bg-green-800 transition-colors duration-200 font-medium"
+          className="flex items-center space-x-2 px-4 py-2 bg-blue-700 text-white rounded-lg hover:bg-blue-800 transition-colors duration-200 font-medium"
         >
           <Plus size={16} />
           <span>Add New Post</span>

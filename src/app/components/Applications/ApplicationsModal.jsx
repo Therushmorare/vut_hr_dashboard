@@ -254,7 +254,7 @@ const ApplicationModal = ({ application, onClose, onAction }) => {
                       value={notes}
                       onChange={(e) => setNotes(e.target.value)}
                       rows={4}
-                      className="w-full p-3 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-green-700 focus:ring-2 focus:ring-green-100"
+                      className="w-full p-3 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-blue-700 focus:ring-2 focus:ring-blue-100"
                       placeholder="Add your evaluation notes here..."
                     />
                   </div>
@@ -293,7 +293,7 @@ const ApplicationModal = ({ application, onClose, onAction }) => {
                     <select
                       value={selectedTemplate}
                       onChange={(e) => setSelectedTemplate(e.target.value)}
-                      className="w-full p-3 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-green-700 focus:ring-2 focus:ring-green-100"
+                      className="w-full p-3 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-blue-700 focus:ring-2 focus:ring-blue-100"
                     >
                       <option value="">Select template...</option>
                       {emailTemplates.map(template => (
@@ -310,7 +310,7 @@ const ApplicationModal = ({ application, onClose, onAction }) => {
                         <h5 className="font-medium text-gray-900">
                           {emailTemplates.find(t => t.value === selectedTemplate)?.label}
                         </h5>
-                        <button className="flex items-center space-x-1 px-3 py-1 bg-green-700 text-white rounded text-sm hover:bg-green-800 transition-colors">
+                        <button className="flex items-center space-x-1 px-3 py-1 bg-blue-700 text-white rounded text-sm hover:bg-blue-800 transition-colors">
                           <Send size={14} />
                           <span>Send</span>
                         </button>
@@ -361,14 +361,14 @@ const ApplicationModal = ({ application, onClose, onAction }) => {
           <div className="p-6 border-t border-gray-200 space-y-3">
             <button
               onClick={handleSubmit}
-              className="w-full bg-green-700 text-white py-3 rounded-lg hover:bg-green-800 transition-colors font-medium"
+              className="w-full bg-blue-700 text-white py-3 rounded-lg hover:bg-blue-800 transition-colors font-medium"
             >
               Submit Changes
             </button>
             <div className="grid grid-cols-2 gap-3">
               <button
                 onClick={() => setShowInterviewSchedule(true)}
-                className="w-full bg-white text-green-700 border border-green-700 py-2 rounded-lg hover:bg-green-50 transition-colors font-medium"
+                className="w-full bg-white text-blue-700 border border-blue-700 py-2 rounded-lg hover:bg-blue-50 transition-colors font-medium"
               >
                 Schedule Interview
               </button>
@@ -396,7 +396,7 @@ const ApplicationModal = ({ application, onClose, onAction }) => {
                 <select
                   value={interviewType}
                   onChange={(e) => setInterviewType(e.target.value)}
-                  className="w-full p-3 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-green-700 focus:ring-2 focus:ring-green-100"
+                  className="w-full p-3 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-blue-700 focus:ring-2 focus:ring-blue-100"
                 >
                   <option value="">Select type...</option>
                   <option value="phone">Phone Screening</option>
@@ -413,7 +413,7 @@ const ApplicationModal = ({ application, onClose, onAction }) => {
                   type="date"
                   value={interviewDate}
                   onChange={(e) => setInterviewDate(e.target.value)}
-                  className="w-full p-3 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-green-700 focus:ring-2 focus:ring-green-100"
+                  className="w-full p-3 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-blue-700 focus:ring-2 focus:ring-blue-100"
                 />
               </div>
               <div>
@@ -424,7 +424,7 @@ const ApplicationModal = ({ application, onClose, onAction }) => {
                   type="time"
                   value={interviewTime}
                   onChange={(e) => setInterviewTime(e.target.value)}
-                  className="w-full p-3 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-green-700 focus:ring-2 focus:ring-green-100"
+                  className="w-full p-3 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-blue-700 focus:ring-2 focus:ring-blue-100"
                 />
               </div>
             </div>
@@ -438,7 +438,7 @@ const ApplicationModal = ({ application, onClose, onAction }) => {
               <button
                 onClick={handleScheduleInterview}
                 disabled={!interviewType || !interviewDate || !interviewTime}
-                className="flex-1 px-4 py-2 bg-green-700 text-white rounded-lg hover:bg-green-800 disabled:bg-gray-300 disabled:cursor-not-allowed"
+                className="flex-1 px-4 py-2 bg-blue-700 text-white rounded-lg hover:bg-blue-800 disabled:bg-gray-300 disabled:cursor-not-allowed"
               >
                 Confirm
               </button>

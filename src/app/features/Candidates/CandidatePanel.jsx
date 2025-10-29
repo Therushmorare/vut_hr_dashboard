@@ -129,7 +129,7 @@ const CandidatePanel = ({ candidate, isOpen, onClose }) => {
                 <select
                   value={selectedStage}
                   onChange={(e) => setSelectedStage(e.target.value)}
-                  className="w-full p-3 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-green-700 focus:ring-2 focus:ring-green-100"
+                  className="w-full p-3 border border-gray-300 rounded-lg text-sm focus:outline-none focus:border-blue-700 focus:ring-2 focus:ring-blue-100"
                 >
                   <option value="">Select stage...</option>
                   {stages.map(stage => (
@@ -321,7 +321,7 @@ const CandidatePanel = ({ candidate, isOpen, onClose }) => {
           <div className="p-6 border-t border-gray-200">
             <button
               onClick={handleSubmit}
-              className="w-full bg-green-700 text-white py-3 rounded-lg hover:bg-green-800 transition-colors font-medium"
+              className="w-full bg-blue-700 text-white py-3 rounded-lg hover:bg-blue-800 transition-colors font-medium"
             >
               Submit Changes
             </button>

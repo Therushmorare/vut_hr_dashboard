@@ -42,7 +42,7 @@ const CandidateRow = React.memo(({ candidate, onView, onDelete }) => {
 
       {/* Position Column */}
       <td className="p-3">
-        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
+        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
           {candidate.position}
         </span>
       </td>
@@ -51,7 +51,7 @@ const CandidateRow = React.memo(({ candidate, onView, onDelete }) => {
       <td className="p-3">
         <button
           onClick={() => console.log('Download CV:', candidate.cv)}
-          className="flex items-center space-x-1 text-xs text-green-700 hover:text-green-800 hover:underline"
+          className="flex items-center space-x-1 text-xs text-green-700 hover:text-blue-800 hover:underline"
         >
           <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -72,7 +72,7 @@ const CandidateRow = React.memo(({ candidate, onView, onDelete }) => {
         <div className="flex items-center space-x-2">
           <button
             onClick={() => onView(candidate)}
-            className="p-1.5 text-gray-600 hover:text-green-700 hover:bg-green-50 rounded-md transition-colors"
+            className="p-1.5 text-gray-600 hover:text-blue-700 hover:bg-blue-50 rounded-md transition-colors"
             title="View candidate"
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

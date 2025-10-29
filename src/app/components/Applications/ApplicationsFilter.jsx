@@ -29,7 +29,7 @@ const ApplicationsFilter = ({
             <select
               value={filters.dateRange}
               onChange={(e) => handleFilterChange('dateRange', e.target.value)}
-              className="p-3 border border-gray-300 rounded-lg text-sm outline-none focus:border-green-700 focus:ring-2 focus:ring-green-100"
+              className="p-3 border border-gray-300 rounded-lg text-sm outline-none focus:border-blue-700 focus:ring-2 focus:ring-blue-100"
             >
               <option value="">All dates</option>
               <option value="today">Today</option>
@@ -48,7 +48,7 @@ const ApplicationsFilter = ({
             <select
               value={filters.department}
               onChange={(e) => handleFilterChange('department', e.target.value)}
-              className="p-3 border border-gray-300 rounded-lg text-sm outline-none focus:border-green-700 focus:ring-2 focus:ring-green-100"
+              className="p-3 border border-gray-300 rounded-lg text-sm outline-none focus:border-blue-700 focus:ring-2 focus:ring-blue-100"
             >
               <option value="">All departments</option>
               <option value="engineering">Engineering</option>
@@ -69,7 +69,7 @@ const ApplicationsFilter = ({
             <select
               value={filters.position}
               onChange={(e) => handleFilterChange('position', e.target.value)}
-              className="p-3 border border-gray-300 rounded-lg text-sm outline-none focus:border-green-700 focus:ring-2 focus:ring-green-100"
+              className="p-3 border border-gray-300 rounded-lg text-sm outline-none focus:border-blue-700 focus:ring-2 focus:ring-blue-100"
             >
               <option value="">All positions</option>
               <option value="software engineer">Software Engineer</option>
@@ -83,13 +83,13 @@ const ApplicationsFilter = ({
 
           <div className="flex flex-col">
             <label className="text-xs font-medium text-gray-700 mb-2 flex items-center">
-              <div className="w-4 h-4 rounded-full bg-green-500 mr-1"></div>
+              <div className="w-4 h-4 rounded-full bg-blue-500 mr-1"></div>
               Status
             </label>
             <select
               value={filters.status}
               onChange={(e) => handleFilterChange('status', e.target.value)}
-              className="p-3 border border-gray-300 rounded-lg text-sm outline-none focus:border-green-700 focus:ring-2 focus:ring-green-100"
+              className="p-3 border border-gray-300 rounded-lg text-sm outline-none focus:border-blue-700 focus:ring-2 focus:ring-blue-100"
             >
               <option value="">All statuses</option>
               <option value="applied">Applied</option>
@@ -109,7 +109,7 @@ const ApplicationsFilter = ({
             <select
               value={filters.type}
               onChange={(e) => handleFilterChange('type', e.target.value)}
-              className="p-3 border border-gray-300 rounded-lg text-sm outline-none focus:border-green-700 focus:ring-2 focus:ring-green-100"
+              className="p-3 border border-gray-300 rounded-lg text-sm outline-none focus:border-blue-700 focus:ring-2 focus:ring-blue-100"
             >
               <option value="">All types</option>
               <option value="internal">Internal</option>
@@ -125,7 +125,7 @@ const ApplicationsFilter = ({
             <select
               value={filters.experience}
               onChange={(e) => handleFilterChange('experience', e.target.value)}
-              className="p-3 border border-gray-300 rounded-lg text-sm outline-none focus:border-green-700 focus:ring-2 focus:ring-green-100"
+              className="p-3 border border-gray-300 rounded-lg text-sm outline-none focus:border-blue-700 focus:ring-2 focus:ring-blue-100"
             >
               <option value="">Any experience</option>
               <option value="0">0+ years</option>

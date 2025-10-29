@@ -29,12 +29,12 @@ const CandidateFilters = ({
             placeholder="Search candidates..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="pl-10 pr-4 py-3 w-full border border-gray-300 rounded-lg text-sm outline-none focus:border-green-700 focus:ring-4 focus:ring-green-100"
+            className="pl-10 pr-4 py-3 w-full border border-gray-300 rounded-lg text-sm outline-none focus:border-blue-700 focus:ring-4 focus:ring-blue-100"
           />
         </div>
         <button
           onClick={onSearch}
-          className="px-6 py-3 bg-green-700 text-white rounded-lg hover:bg-green-800 transition-colors duration-200 font-medium"
+          className="px-6 py-3 bg-blue-700 text-white rounded-lg hover:bg-blue-800 transition-colors duration-200 font-medium"
         >
           Search
         </button>
@@ -52,7 +52,7 @@ const CandidateFilters = ({
             <select
               value={filters.dateRange}
               onChange={(e) => onFilterChange('dateRange', e.target.value)}
-              className="p-2 border border-gray-300 rounded-lg text-xs outline-none focus:border-green-700 focus:ring-2 focus:ring-green-100"
+              className="p-2 border border-gray-300 rounded-lg text-xs outline-none focus:border-blue-700 focus:ring-2 focus:ring-blue-100"
             >
               <option value="">All dates</option>
               <option value="today">Today</option>
@@ -66,13 +66,13 @@ const CandidateFilters = ({
           {/* Status Filter */}
           <div className="flex flex-col">
             <label className="text-xs font-medium text-gray-700 mb-2 flex items-center">
-              <div className="w-4 h-4 rounded-full bg-green-500 mr-1"></div>
+              <div className="w-4 h-4 rounded-full bg-blue-500 mr-1"></div>
               Status
             </label>
             <select
               value={filters.status}
               onChange={(e) => onFilterChange('status', e.target.value)}
-              className="p-2 border border-gray-300 rounded-lg text-xs outline-none focus:border-green-700 focus:ring-2 focus:ring-green-100"
+              className="p-2 border border-gray-300 rounded-lg text-xs outline-none focus:border-blue-700 focus:ring-2 focus:ring-blue-100"
             >
               <option value="">All statuses</option>
               <option value="applied">Applied</option>
@@ -93,7 +93,7 @@ const CandidateFilters = ({
             <select
               value={filters.position}
               onChange={(e) => onFilterChange('position', e.target.value)}
-              className="p-2 border border-gray-300 rounded-lg text-xs outline-none focus:border-green-700 focus:ring-2 focus:ring-green-100"
+              className="p-2 border border-gray-300 rounded-lg text-xs outline-none focus:border-blue-700 focus:ring-2 focus:ring-blue-100"
             >
               <option value="">All positions</option>
               <option value="software-engineer">Software Engineer</option>
@@ -114,7 +114,7 @@ const CandidateFilters = ({
             <select
               value={filters.type}
               onChange={(e) => onFilterChange('type', e.target.value)}
-              className="p-2 border border-gray-300 rounded-lg text-xs outline-none focus:border-green-700 focus:ring-2 focus:ring-green-100"
+              className="p-2 border border-gray-300 rounded-lg text-xs outline-none focus:border-blue-700 focus:ring-2 focus:ring-blue-100"
             >
               <option value="">All types</option>
               <option value="internal">Internal</option>
@@ -131,7 +131,7 @@ const CandidateFilters = ({
             <select
               value={filters.experience}
               onChange={(e) => onFilterChange('experience', e.target.value)}
-              className="p-2 border border-gray-300 rounded-lg text-xs outline-none focus:border-green-700 focus:ring-2 focus:ring-green-100"
+              className="p-2 border border-gray-300 rounded-lg text-xs outline-none focus:border-blue-700 focus:ring-2 focus:ring-blue-100"
             >
               <option value="">Any experience</option>
               <option value="0">0+ years</option>

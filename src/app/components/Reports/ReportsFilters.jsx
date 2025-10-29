@@ -17,7 +17,7 @@ const ReportsFilters = ({ filters, handleFilterChange, fetchReportData, setFilte
           <select
             value={filters.dateRange}
             onChange={(e) => handleFilterChange('dateRange', e.target.value)}
-            className="p-3 border border-gray-300 rounded-lg text-sm outline-none focus:border-green-700 focus:ring-2 focus:ring-green-100"
+            className="p-3 border border-gray-300 rounded-lg text-sm outline-none focus:border-blue-700 focus:ring-2 focus:ring-blue-100"
           >
             <option value="week">This week</option>
             <option value="month">This month</option>
@@ -55,7 +55,7 @@ const ReportsFilters = ({ filters, handleFilterChange, fetchReportData, setFilte
           <select
             value={filters.position}
             onChange={(e) => handleFilterChange('position', e.target.value)}
-            className="p-3 border border-gray-300 rounded-lg text-sm outline-none focus:border-green-700 focus:ring-2 focus:ring-green-100"
+            className="p-3 border border-gray-300 rounded-lg text-sm outline-none focus:border-blue-700 focus:ring-2 focus:ring-blue-100"
           >
             <option value="">All positions</option>
             <option value="software-engineer">Software Engineer</option>
@@ -77,7 +77,7 @@ const ReportsFilters = ({ filters, handleFilterChange, fetchReportData, setFilte
         </button>
         <button
           onClick={fetchReportData}
-          className="flex items-center space-x-2 px-4 py-2 bg-green-700 text-white rounded-lg hover:bg-green-800 transition-colors text-sm"
+          className="flex items-center space-x-2 px-4 py-2 bg-blue-700 text-white rounded-lg hover:bg-blue-800 transition-colors text-sm"
         >
           <span>Refresh Data</span>
         </button>

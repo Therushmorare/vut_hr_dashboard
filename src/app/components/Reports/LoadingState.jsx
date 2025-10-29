@@ -6,7 +6,7 @@ const LoadingState = () => {
     <div className="p-8 bg-gray-50 min-h-screen">
       <div className="flex items-center justify-center h-64">
         <div className="text-center">
-          <Loader className="animate-spin mx-auto mb-4 text-green-700" size={32} />
+          <Loader className="animate-spin mx-auto mb-4 text-blue-700" size={32} />
           <p className="text-gray-600">Loading recruitment reports...</p>
         </div>
       </div>
