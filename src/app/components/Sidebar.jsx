@@ -23,7 +23,7 @@ const Sidebar = () => {
     <div className="w-48 h-screen bg-white text-black flex flex-col fixed top-0 left-0 shadow-[4px_0_6px_-1px_rgba(0,0,0,0.1)]">
       {/* Logo*/}
       <div className="p-6 border-b border-gray-600">
-        <img src="./assets/vut.png" alt="Logo" className="w-full max-w-28 ml-2 top-0 h-auto object-contain" />
+        <img src="../assets/vut.png" alt="Logo" className="w-full max-w-28 ml-2 top-0 h-auto object-contain" />
       </div>
 
       {/* Navigation Items */}
